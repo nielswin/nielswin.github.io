@@ -1,0 +1,115 @@
+body {
+    background-color: gray;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    grid-area: nav;
+    background-color: #5829F0;
+    position: sticky;
+    margin-top: 0px;
+    padding: 10px;
+    align-items: center;
+    width: 99vw;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 100px;
+    animation: fadeIn 3s;
+    font-weight: bolder;
+}
+
+.text {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 100px;
+    animation: fadeIn2 3s;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    0% {
+       opacity: 0;
+       transform: translateX(-1000px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+} 
+
+@keyframes fadeIn2 {
+    0% {
+       opacity: 0;
+       transform: translateX(1000px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+} 
+
+@keyframes fadeIn3 {
+    0% {
+       opacity: 0;
+       transform: translateY(1000px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+} 
+
+.listing {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    list-style: none;
+    gap: 90px;
+    margin-top: 50px;
+    text-align: center;
+    animation: fadeIn3 3s;
+}
+
+
+.listing li {
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.listing li h2 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+.listing .cta {
+    margin-top: auto;
+    border-top: 2px solid gray;
+    padding: 10px;
+    text-align: center;
+}
+
+.listing .cta a {
+    text-decoration: none;
+    color: gray;
+    font-size: 30px;
+}
+
+.listing .body {
+    padding: 10px;
+}
+
+.p-text {
+    font-weight: bold;
+}
