@@ -1,16 +1,3 @@
-.nav {
-    display: flex;
-    justify-content: space-around;
-    grid-area: nav;
+.navbar {
     background-color: #5829F0;
-    position: sticky;
-    margin-top: 0px;
-    padding: 10px;
-    align-items: center;
-    width: 99vw;
-}
-
-.nav a {
-    color: white;
-    text-decoration: none;
 }
