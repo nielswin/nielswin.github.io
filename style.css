@@ -1,3 +1,22 @@
 .navbar {
     background-color: #5829F0;
 }
+
+.typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+    border-right: .15em solid orange;
+    font-size: 1.5em;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 45%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: blue; }
+}
