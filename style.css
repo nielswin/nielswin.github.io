@@ -20,3 +20,19 @@
     from, to { border-color: transparent; }
     50% { border-color: blue; }
 }
+
+.fade-in-left {
+    position: relative;
+    animation: fadeInLeft 3s forwards;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
